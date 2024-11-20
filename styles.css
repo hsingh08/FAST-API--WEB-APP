@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1596237563267-84ffd99c80e1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width: 65%;
+    max-width: 800px;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.file-upload {
+    margin-bottom: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 1rem;
+    text-align: center;
+    color: #4CAF50;
+}
+
+.animal-image-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#animalImage {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+label {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+h2.subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Add this new style for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: 80vh;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals IMAGE~WORLD</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animals IMAGE~WORLD</h1>
+        <form id="uploadForm">
+            <h2 class="subtitle">Select To View Image Of Different Animals:</h2>
+            <div class="checkbox-group">
+                <label><input type="radio" name="animal" value="cat"> Cat</label>
+                <label><input type="radio" name="animal" value="dog"> Dog</label>
+                <label><input type="radio" name="animal" value="elephant"> Elephant</label>
+            </div>
+            <div id="animalImageContainer" class="animal-image-container">
+                <img id="animalImage" src="" alt="Selected animal" style="display: none;">
+            </div>
+            <h2 class="subtitle">Add Custom Images Of Your Choice:</h2>
+            <div class="file-upload">
+                <input type="file" id="fileInput" name="file">
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
